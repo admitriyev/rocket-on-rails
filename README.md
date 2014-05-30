@@ -15,9 +15,11 @@ How to setup Rails on Mac OS X
 * clone this repository 
 
 * run command
+
   rake db:migrate
 
 * run command
+
   rails server
 
 * go to http://localhost:3000
