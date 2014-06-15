@@ -6,7 +6,7 @@ class MainController < ApplicationController
   end
 
   # test with curl
-  # curl -i -F image=@profile-photo.jpg http://localhost:3000/myupload_api
+  # curl -i -F image=@profile-photo.jpg http://localhost:3000/my_upload_api
   def my_upload_api
   	#debugger
   	uploaded_io = params[:image]
