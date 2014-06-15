@@ -1,13 +1,14 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
+# Use PostgreSQL 9.3
+# see Gemfile for the pg gem
+
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
+    adapter: postgresql
+    encoding: unicode
+    database: dev_ror
+    port: 5432
+    host: localhost
+    username: postgres
+    password: yourpassword
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

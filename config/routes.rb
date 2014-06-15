@@ -3,6 +3,8 @@ NgRails::Application.routes.draw do
 
   get "main/index"
   get "main/modal"
+  get 'main/profile'
+  get 'main/profile_photo'
 
   post 'my_upload_api' => 'main#my_upload_api'
 
@@ -10,7 +12,7 @@ NgRails::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'main#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
